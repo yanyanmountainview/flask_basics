@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Movies to watch in 2018 </h1>
+    <h2> This colection belongs to {{name}} </h2>
+    <h3> movies: {{ movies }} </h3>
+    <h3> first: {{ movies[0] }}</h3>
+    <h3> sliceing: {{ movies[1:4] }}</h3>
+    {% for item in movies %}
+      <ul>
+        <li>the movies is : {{ item }}</li>
+      </ul>
+    {% endfor %}  
+  </body>
+</html>
